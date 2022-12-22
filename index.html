@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9035079bef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="height: 500px; width: 450px">
+
+    <div id="container">
+      <span>
+        <img id="myImage" />
+        <img src="pink.svg" id="pinkLoader" />
+        <img src="blue.svg" id="blueLoader" />
+        <img src="yellow.svg" id="yellowLoader" />
+        <img id="logoImg" />
+        <div id="filter">Custom Umbrella</div>
+        <div>
+          <label
+            ><input
+              type="radi0"
+              id="radioblue"
+              onclick="changeToBlue()"
+          /></label>
+          <label
+            ><input
+              type="radi0"
+              id="radiopink"
+              onclick="changeToPink()"
+          /></label>
+          <label
+            ><input
+              type="radi0"
+              id="radioyellow"
+              onclick="changeToYellow()"
+          /></label> 
+        </div>
+      </span>
+      <div>
+        <p id="firstline">Customize your umbrella</p>
+        <p id="secondline">Upload a logo for an instant preview.</p>
+        <p id="thirdline">.png and .jpg only. Max file size is 5MB</p>
+      </div>
+      <form name="pickFile">
+        <button id="inputBtn">UPLOAD LOGO</button>
+        <img src="White.svg" id="smallLoader" />
+        <i class="fa-solid fa-x"></i>
+        <input type="file" name="file" style="display: none" id="file" />        
+        <label for="file" id="uploadIcon" onclick="uploadIconFn()" accept="image/png, image/jpg"><img src="upload_icon.svg"/></label>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

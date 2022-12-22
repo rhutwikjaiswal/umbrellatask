@@ -1,0 +1,157 @@
+
+#pinkLoader, #blueLoader, #yellowLoader {  
+    position: absolute  ;
+    width: 120px;
+    height: 120px;
+    top:270px;
+    left:13.5rem;
+    animation: spin 3s linear infinite;
+    transition: opacity 0.75s, visibility 0.75s;    
+    
+  }
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  #loaderImage-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  #smallLoader{
+    fill:rgb(30, 30, 172);
+    position: absolute  ;
+    width: 30px;
+    height: 30px;
+    top:418px;
+    left:36rem;
+    animation: spin 3s linear infinite;
+    transition: opacity 0.75s, visibility 0.75s;    
+    
+  }
+
+#myImage{
+    height:350px;
+    width:350px;
+    position:relative;
+    top:150px;
+    left:150px;
+  
+} 
+#logoImg{
+    height:40px;
+    width:40px;
+    position:absolute;
+    top:22.5rem;
+    left:15.5rem;
+}
+ #filter{
+    position:relative;
+    top:-150px;
+    left:700px;
+    font-size: 40px;
+    font-weight: 700;
+
+
+}
+#radioblue{
+    background-color: 00a3e0;
+    border-radius: 50%;
+    color: 00a3e0;
+    position: relative;
+    left:700px;
+    bottom:115px;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.6em;
+    margin-bottom: 0.6em;
+    border: rgba(255,255,255,.2) solid 2px;
+    font-size: 1.14286em;
+    border-color: 00a3e0;
+}
+#radiopink{
+    background-color: #d0006f;
+    border-radius: 50%;
+    color: #d0006f;
+    position: relative;
+    left:700px;
+    bottom:115px;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.6em;
+    margin-bottom: 0.6em;
+    border: rgba(255,255,255,.2) solid 2px;
+    font-size: 1.14286em;
+}
+
+#radioyellow{
+    background-color: f5d730;
+    border-radius: 50%;
+    color: f5d730;
+    position: relative;
+    left:700px;
+    bottom:115px;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.6em;
+    margin-bottom: 0.6em;
+    border: rgba(255,255,255,.2) solid 2px;
+    font-size: 1.14286em;
+}
+#firstline{
+    position: relative;
+    left:702px;
+    bottom:100px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height:0%;
+}
+#secondline{
+    position: relative;
+    left:702px;
+    bottom:100px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height:0%;
+}
+#thirdline{
+    position: relative;
+    left:702px;
+    bottom:100px; 
+    font-size: 13px;
+    line-height:5px;
+}
+
+#inputBtn{
+    position: relative;
+    left:702px;
+    bottom:100px;  
+    width: 75%;
+    line-height: 1.4;
+    padding-left: 5px;
+    padding-right: 5px;
+    white-space: normal;
+    margin-top: 0;
+    min-height: 44px;
+    border-color: transparent;
+    color:white;
+    padding: 0%;
+}
+.fa-x{
+    position:fixed;
+    left:51rem;
+    bottom:11rem;  
+    font-size: small;
+    color:white;
+
+}
+#uploadIcon{
+    position: relative;
+    left:365px;
+    bottom:95px;
+    color: white; 
+}
+
+/* #notvisible{
+    visibility: hidden;
+} */
