@@ -1,13 +1,14 @@
-
-#pinkLoader, #blueLoader, #yellowLoader {  
+body{
+    width: 700px;
+}
+ #newSvg {  
     position: absolute  ;
     width: 120px;
     height: 120px;
     top:270px;
     left:13.5rem;
     animation: spin 3s linear infinite;
-    transition: opacity 0.75s, visibility 0.75s;    
-    
+    transition: opacity 0.75s, visibility 0.75s;   
   }
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
@@ -19,8 +20,7 @@
   }
 
   #smallLoader{
-    fill:rgb(30, 30, 172);
-    position: absolute  ;
+    position: absolute;
     width: 30px;
     height: 30px;
     top:418px;
@@ -51,8 +51,8 @@
     left:700px;
     font-size: 40px;
     font-weight: 700;
-
-
+    width: 400px;
+    margin: 0;
 }
 #radioblue{
     background-color: 00a3e0;
@@ -120,6 +120,7 @@
     bottom:100px; 
     font-size: 13px;
     line-height:5px;
+    width: 400px;
 }
 
 #inputBtn{
@@ -136,22 +137,94 @@
     border-color: transparent;
     color:white;
     padding: 0%;
+    width: 350px;
 }
 .fa-x{
-    position:fixed;
-    left:51rem;
-    bottom:11rem;  
+    position:relative;
+    left:33rem;
+    bottom:4.8rem;  
     font-size: small;
     color:white;
-
 }
 #uploadIcon{
     position: relative;
-    left:365px;
-    bottom:95px;
+    left:17rem;
+    bottom:4.7rem;
     color: white; 
 }
 
-/* #notvisible{
-    visibility: hidden;
-} */
+/* -------------- For Responsive ----------------- */
+
+
+@media screen and (max-width: 600px)
+{    
+    #smallLoader{
+        position: relative;
+        top:16.5rem;
+        left:-6.3rem;
+      }
+    #myImage{
+        height:300px;
+        width:300px;
+        left:220px;
+    } 
+    #newSvg {  
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        top: 253px;
+        left:16rem;  
+      }
+      #logoImg{
+        height:40px;
+        width:40px;
+        position:absolute;
+        top:20.5rem;
+        left:18rem;
+    }
+    #filter{
+        position:relative;
+        top:250px;
+        left:220px;
+    }
+    #radioblue{
+        left:11.1rem;
+        bottom:-15rem;
+    
+    }
+    #radiopink{
+        left:11.1rem;
+        bottom:-15rem;
+    }
+    #radioyellow{
+        left:11.1rem;
+        bottom:-15rem;
+    }
+    #firstline{
+        left:11.1rem;
+        bottom:-16rem;
+    }
+    #secondline{
+        left:11.1rem;
+        bottom:-16rem;
+    }
+    #thirdline{
+        left:11.1rem;
+        bottom:-16rem;  
+    }
+    #inputBtn{
+        left:11.1rem;
+        bottom:-16rem;  
+        width: 350px;
+    }
+    .fa-x{
+        position:absolute;
+        left:27.5rem;
+        bottom:-9rem;    
+    }
+    #uploadIcon{
+        position: relative;
+        left:-6rem;
+        bottom:-16.3rem; 
+    }
+}

@@ -1,19 +1,10 @@
- var img = document.getElementById("myImage");
- img.src = "Pink umbrella.png";
+var img = document.getElementById("myImage");
+img.src = "Pink umbrella.png";
 
 var inputBtn = document.getElementById("inputBtn");
 inputBtn.style.backgroundColor = "d0006f";
 
 document.body.style.backgroundColor = "#FFEFD5";
-
-var pinkLoader = document.getElementById("pinkLoader");
-pinkLoader.style.display = "none";
-
-var yellowLoader = document.getElementById("yellowLoader");
-yellowLoader.style.display = "none";
-
-var blueLoader  = document.getElementById("blueLoader");
-blueLoader.style.display = "none";
 
 var smallLoader = document.getElementById("smallLoader");
 smallLoader.style.display = "none";
@@ -24,11 +15,13 @@ logoImg.style.display = "none";
 var uploadIcon = document.getElementById('uploadIcon');
 uploadIcon.style.display = "";
 
-
+var newSvg = document.getElementById('newSvg');
+newSvg.style.display = "none";
 
 
 function changeToBlue() {
-  blueLoader.style.display = "";
+  newSvg.style.fill = "blue"; 
+  newSvg.style.display = "";
   img.style.visibility = "hidden";
   logoImg.style.display = "none";
 
@@ -36,7 +29,7 @@ function changeToBlue() {
     img.src = "Blue umbrella.png";  
     inputBtn.style.backgroundColor = "00a3e0";
     document.body.style.backgroundColor = "#ABFBF9";
-    blueLoader.style.display = "none";
+    newSvg.style.display = "none";
     logoImg.style.display = "";
     img.style.visibility = "";
     smallLoader.style.display = "none";
@@ -45,7 +38,8 @@ function changeToBlue() {
 }
 
 function changeToPink() {
-  pinkLoader.style.display = "";
+  newSvg.style.fill = "pink";
+  newSvg.style.display = "";
   img.style.visibility = "hidden";
   logoImg.style.display = "none";
 
@@ -53,13 +47,14 @@ function changeToPink() {
     img.src = "Pink umbrella.png";
     inputBtn.style.backgroundColor = "d0006f";
     document.body.style.backgroundColor = "#FFEFD5";
-    pinkLoader.style.display = "none";
+    newSvg.style.display = "none";
     logoImg.style.display = "";
     img.style.visibility = "";
   }, 2000);
 }
 function changeToYellow() {
-  yellowLoader.style.display = "";
+  newSvg.style.fill = "yellow";
+  newSvg.style.display = "";
   img.style.visibility = "hidden";
   logoImg.style.display = "none";
 
@@ -67,7 +62,7 @@ function changeToYellow() {
     img.src = "Yello umbrella.png";
     inputBtn.style.backgroundColor = "f5d730";
     document.body.style.backgroundColor = "#FFFF9F";
-    yellowLoader.style.display = "none";
+    newSvg.style.display = "none";
     logoImg.style.display = "";
     img.style.visibility = "";
   }, 2000);
@@ -77,6 +72,10 @@ function uploadIconFn(){
   smallLoader.style.display = "";
 }
 
+function closeFn(){
+  logoImg.remove(logoImg.logoImg);
+  inputBtn.textContent = "UPLOAD LOGO";
+}
 
 var reader1 = new FileReader();
 reader1.addEventListener("load", (e) => {
@@ -89,53 +88,3 @@ document.addEventListener("DOMContentLoaded", (e) => {
     inputBtn.textContent = e.target.files[0].name;
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// window.addEventListener("load", ()=>{
-//     preLoader.classList.add("loader-hidden");
-
-//     preLoader.addEventListener("transitioned", () =>{
-//         document.body.removeChild("preLoader");
-//     })
-// })
-// preLoader.style.display = "none";
-
-// const myTimeout = setTimeout(myGreeting, 5000);
-
-// <span id="Uimage"><img src="images\Blue umbrella.png" height="200px" width="200px"/></span>
-// <span id="Uimage"><img src="images\Pink umbrella.png" height="200px" width="200px"/></span>
-// <span id="Uimage"><img src="images\Yello umbrella.png" height="200px" width="200px" /></span>
