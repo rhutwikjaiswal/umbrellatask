@@ -75,6 +75,8 @@ function uploadIconFn(){
 function closeFn(){
   logoImg.remove(logoImg.logoImg);
   inputBtn.textContent = "UPLOAD LOGO";
+  smallLoader.style.display = "none";
+  uploadIcon.style.display = ""; 
 }
 
 var reader1 = new FileReader();
