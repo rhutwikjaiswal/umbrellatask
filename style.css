@@ -1,230 +1,278 @@
-body{
-    width: 700px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- #newSvg {  
-    position: absolute  ;
-    width: 120px;
-    height: 120px;
-    top:270px;
-    left:13.5rem;
-    animation: spin 3s linear infinite;
-    transition: opacity 0.75s, visibility 0.75s;   
-  }
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  #loaderImage-hidden{
-    opacity: 0;
-    visibility: hidden;
-  }
 
-  #smallLoader{
-    position: absolute;
+/* body{
+    width: 700px
+} */
+/* #container{
+    max-width: 960px;
+    margin: auto;
+
+} */
+ #newSvg {
+  position: absolute;
+  width: 120px; 
+  height: 120px;
+  top: 266px;
+  left: 13.1rem;
+  animation: spin 3s linear infinite;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+#loaderImage-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+#myImage {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  top: 150px;
+  left: 150px;
+}
+ #logoImg {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  top: 6.5rem;
+  right: 2.7rem;        
+}
+
+#filter {
+  position: relative;
+  top: -150px;
+  left: 700px;
+  font-size: 40px;
+  font-weight: 700;
+  width: 340px;
+  margin: 0;
+}
+#radioblue {
+  background-color: 00a3e0;
+  border-radius: 50%;
+  color: 00a3e0;
+  position: relative;
+  left: 700px;
+  bottom: 115px;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.6em;
+  margin-bottom: 0.6em;
+  border: rgba(255, 255, 255, 0.2) solid 2px;
+  font-size: 1.14286em;
+  border-color: 00a3e0;
+}
+ #radiopink {
+  background-color: #d0006f;
+  border-radius: 50%;
+  color: #d0006f;
+  position: relative;
+  left: 700px;
+  bottom: 115px;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.6em;
+  margin-bottom: 0.6em;
+  border: rgba(255, 255, 255, 0.2) solid 2px;
+  font-size: 1.14286em;
+}
+
+#radioyellow {
+  background-color: f5d730;
+  border-radius: 50%;
+  color: f5d730;
+  position: relative;
+  left: 35.2rem;
+  bottom: 5.7rem;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.6em;
+  margin-bottom: 0.6em;
+  border: rgba(255, 255, 255, 0.2) solid 2px;
+  font-size: 1.14286em;
+}
+
+#firstline {
+  position: relative;
+  left: 35.2rem;
+  bottom: 5rem;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 0%;
+  width: 300px;
+}
+ #secondline {
+  position: relative;
+  left: 35.2rem;
+  bottom: 3.5rem;    
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 0%;
+  width: 300px;
+}
+
+#thirdline {
+  position: relative;
+  left: 35.2rem;
+  bottom: 2rem;
+  font-size: 13px;
+  line-height: 5px;
+  width: 400px;
+  width: 300px;
+} 
+  
+#inputBtn {
+  position: relative;
+  left: 35rem;
+  bottom: 1rem;
+  width: 75%;
+  line-height: 1.4;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: normal;
+  margin-top: 0;
+  min-height: 44px;
+  border-color: transparent;
+  color: white;
+  padding: 0%;
+  width: 320px;
+  text-align: center;
+}
+#smallLoader {
+    position: relative;
     width: 30px;
     height: 30px;
-    top:418px;
-    left:36rem;
+    top: -10px;
+    left: 18.9rem;
     animation: spin 3s linear infinite;
-    transition: opacity 0.75s, visibility 0.75s;    
-    
-  }
+    transition: opacity 0.75s, visibility 0.75s;
+  } 
 
-#myImage{
-    height:350px;
-    width:350px;
-    position:relative;
-    top:150px;
-    left:150px;
-  
+.fa-x {
+  position: relative;
+  left: 31.7rem;
+    bottom: 0.9rem;
+  font-size: small;
+  color: black;
+}
+#uploadIcon {
+  position: relative;
+  left: 18rem;
+  bottom: 0.7rem;
+  color: white;
 } 
-#logoImg{
-    height:40px;
-    width:40px;
-    position:absolute;
-    top:22.5rem;
-    left:15.5rem;
-}
- #filter{
-    position:relative;
-    top:-150px;
-    left:700px;
-    font-size: 40px;
-    font-weight: 700;
-    width: 400px;
-    margin: 0;
-}
-#radioblue{
-    background-color: 00a3e0;
-    border-radius: 50%;
-    color: 00a3e0;
-    position: relative;
-    left:700px;
-    bottom:115px;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.6em;
-    margin-bottom: 0.6em;
-    border: rgba(255,255,255,.2) solid 2px;
-    font-size: 1.14286em;
-    border-color: 00a3e0;
-}
-#radiopink{
-    background-color: #d0006f;
-    border-radius: 50%;
-    color: #d0006f;
-    position: relative;
-    left:700px;
-    bottom:115px;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.6em;
-    margin-bottom: 0.6em;
-    border: rgba(255,255,255,.2) solid 2px;
-    font-size: 1.14286em;
-}
 
-#radioyellow{
-    background-color: f5d730;
-    border-radius: 50%;
-    color: f5d730;
-    position: relative;
-    left:700px;
-    bottom:115px;
-    width: 1em;
-    height: 1em;
-    margin-right: 0.6em;
-    margin-bottom: 0.6em;
-    border: rgba(255,255,255,.2) solid 2px;
-    font-size: 1.14286em;
-}
-#firstline{
-    position: relative;
-    left:702px;
-    bottom:100px;
-    font-size: 20px;
-    font-weight: 600;
-    line-height:0%;
-}
-#secondline{
-    position: relative;
-    left:702px;
-    bottom:100px;
-    font-size: 17px;
-    font-weight: 500;
-    line-height:0%;
-}
-#thirdline{
-    position: relative;
-    left:702px;
-    bottom:100px; 
-    font-size: 13px;
-    line-height:5px;
-    width: 400px;
-}
-
-#inputBtn{
-    position: relative;
-    left:702px;
-    bottom:100px;  
-    width: 75%;
-    line-height: 1.4;
-    padding-left: 5px;
-    padding-right: 5px;
-    white-space: normal;
-    margin-top: 0;
-    min-height: 44px;
-    border-color: transparent;
-    color:white;
-    padding: 0%;
-    width: 350px;
-}
-.fa-x{
-    position:relative;
-    left:33rem;
-    bottom:4.8rem;  
-    font-size: small;
-    color:white;
-}
-#uploadIcon{
-    position: relative;
-    left:17rem;
-    bottom:4.7rem;
-    color: white; 
-}
 
 /* -------------- For Responsive ----------------- */
 
+@media screen and (max-width: 600px) {
+  #smallLoader {
+    position: relative;
+    top: 14.5rem;
+    left: -8.5rem;
+  }
+  #myImage {
+    height: 200px;
+    width: 200px;
+    top: 3rem;
+    align-items: center;
+  }
+  #newSvg {
+    position: absolute;
+    width:80px;
+    height:80px;
+    top: 120px;
+    left: 10.5rem;
 
-@media screen and (max-width: 600px)
-{    
-    #smallLoader{
-        position: relative;
-        top:16.5rem;
-        left:-6.3rem;
-      }
-    #myImage{
-        height:300px;
-        width:300px;
-        left:220px;
-    } 
-    #newSvg {  
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        top: 253px;
-        left:16rem;  
-      }
-      #logoImg{
-        height:40px;
-        width:40px;
-        position:absolute;
-        top:20.5rem;
-        left:18rem;
-    }
-    #filter{
-        position:relative;
-        top:250px;
-        left:220px;
-    }
-    #radioblue{
-        left:11.1rem;
-        bottom:-15rem;
+  }
+  #logoImg {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    top: 2.5rem;
+    left: 3.1rem;
+  }
+  #filter {
+    position: relative;
+    font-size: 30px;
+    top: 120px;
+    left:5.1rem;
     
-    }
-    #radiopink{
-        left:11.1rem;
-        bottom:-15rem;
-    }
-    #radioyellow{
-        left:11.1rem;
-        bottom:-15rem;
-    }
-    #firstline{
-        left:11.1rem;
-        bottom:-16rem;
-    }
-    #secondline{
-        left:11.1rem;
-        bottom:-16rem;
-    }
-    #thirdline{
-        left:11.1rem;
-        bottom:-16rem;  
-    }
-    #inputBtn{
-        left:11.1rem;
-        bottom:-16rem;  
-        width: 350px;
-    }
-    .fa-x{
-        position:absolute;
-        left:27.5rem;
-        bottom:-9rem;    
-    }
-    #uploadIcon{
-        position: relative;
-        left:-6rem;
-        bottom:-16.3rem; 
-    }
+  }
+  #radioblue {
+    left: 5.1rem;
+    bottom: -8rem;
+  }
+  #radiopink {
+    left: 5.1rem;
+    bottom: -8rem;
+  }
+  #radioyellow {
+    left: 5.2rem;
+    bottom: -8rem;
+  }
+  #firstline {
+    left: 5rem;
+    bottom: -10rem;
+  }
+  #secondline {
+    left: 5.1rem;
+    bottom: -11.5rem;
+  }
+  #thirdline {
+    left: 5rem;
+    bottom: -13rem;
+  }
+  #inputBtn {
+    left: 5rem;
+    bottom: -14rem;
+    width: 270px;
+  }
+  .fa-x {
+    position: relative;
+    left: 1.8rem;
+    top: 14.2rem;
+  }
+  #uploadIcon {
+    position: relative;
+    left: -9.3rem;
+    bottom: -14.3rem;
+  }
+} 
+
+
+@media screen and (max-width: 425px){
+
+    #logoImg {
+        left: 1.7rem;
+      }
+      .fa-x {
+        left: 3.5rem;
+        top: 14.2rem;
+      } 
 }
+ @media screen and (max-width: 320px){
+
+      .fa-x {
+        position: absolute;
+        left: 17rem;
+        top: 28.5rem;
+      } 
+      #uploadIcon {
+        position: relative;
+        left: -8.3rem;
+        bottom: -14.3rem;
+      }
+}
+
+
